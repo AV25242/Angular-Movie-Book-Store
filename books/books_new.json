@@ -1,0 +1,49 @@
+{
+  "records": [
+    {  "sku" : "b001",
+      "Tittle": "Cometh The Hour, by Jeffrey Archer",
+      "Author": " by Jeffrey Archer",
+      "image": "images/image1.jpg",
+       "price":  "19.20",
+"Discription": "Cometh the Hour opens with the reading of a suicide note, which has devastating consequences for Harry and Emma Clifton, Giles                     Barrington and Lady Virginia."
+    },
+    {  "sku" :"b002",
+      "Tittle": "A Doubter's Almanac",
+      "Author": " by Ethan Canin",
+      "image": "images/image2.jpg",
+       "price":  "19.20",
+"Discription": "Cometh the Hour opens with the reading of a suicide note, which has devastating consequences for Harry and Emma Clifton, Giles                     Barrington and Lady Virginia."    
+          
+      
+    },
+    {  "sku" :"b003",
+      "Tittle": "The High Mountains of Portugal",
+      "Author": " by Yann Martelr",
+       "image": "images/image3.jpg",
+       "price":  "19.20",
+"Discription": "Cometh the Hour opens with the reading of a suicide note, which has devastating consequences for Harry and Emma Clifton, Giles                     Barrington and Lady Virginia."    
+         
+      
+        
+    },
+    {  "sku":  "b004",
+     "Tittle": "The forgetting Times",
+      "Author": " by Sharon Guskin",
+      "image": "images/image4.jpg",
+      "price":  "19.20",
+"Discription": "Cometh the Hour opens with the reading of a suicide note, which has devastating consequences for Harry and Emma Clifton, Giles                     Barrington and Lady Virginia."    
+       
+      
+    },
+    {   "sku": "b005",
+      "Tittle": "The Arangement",
+      "Author": " by Asheley Warlick",
+      "image": "images/image5.jpg",
+       "price":  "19.20",
+"Discription": "Cometh the Hour opens with the reading of a suicide note, which has devastating consequences for Harry and Emma Clifton, Giles                     Barrington and Lady Virginia."    
+       
+      
+    }
+    
+  ]
+}
