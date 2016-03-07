@@ -44,16 +44,17 @@
 		<!-- header -->
 		<header>
 			<!-- staic navbar -->
-			<div class="navbar navbar-fixed-top ">
+			<div class="navbar navbar-default navbar-fixed-top" style="color:#ffffff">
 				<div class="contianer-fluid header-color">	
 					<div class="container">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span> 
 							</button>
-							<a class="navbar-brand" ui-sref="home">M & B eStore<small>Movies & Books eStore</small></a>
+							<a class="navbar-brand" ui-sref="home" style="color:#ffffff">M & B eStore<small>Movies & Books eStore</small></a>
 						</div>
 					
 						<div class="collapse navbar-collapse" id="myNavbar">
@@ -68,7 +69,7 @@
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								<li class="header-font-small header-font-bold">
-									<a href="#">
+									<a ui-sref="SignIn">
 										Sign In
 									</a>
 								</li>
@@ -126,7 +127,6 @@
 			
 				<!-- place the content here -->
 				<div class="col-md-10">
-					<h1>place for content</h1>
 					<div ui-view></div>
 				</div>
 				

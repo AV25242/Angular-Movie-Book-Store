@@ -17,18 +17,23 @@ myapp.config(function($stateProvider, $urlRouterProvider) {
 		// for movies page and multiple named views
 		.state('movies', {
 			url: '/Movies',
-			templateUrl: 'templates/movies.html'
-			
+			templateUrl: 'templates/movies.html',
+			controller: 'MoviesController'			
 			})
 			
 		// for books page and multiple names=d views
 		.state('books', {
 			url: '/Books',
 			templateUrl: 'templates/books.html'
-			
+			})
+		// for login page 
+		.state('SignIn', {
+			url: '/SignIn',
+			templateUrl: 'templates/login.html'
 			})
 });
 
+// controller for home page
 myapp.controller('MainController', function ($scope) {
   $scope.myInterval = 1000;
   var slides = $scope.slides = [];
@@ -43,4 +48,11 @@ myapp.controller('MainController', function ($scope) {
   for (var i=0; i<4; i++) {
     $scope.addSlide();
   }
+});
+
+// controller for movies list 
+myapp.controller('MoviesController', function($scope, $http) {
+	$http.get("moviesCollection.json").then(function (response) {
+		$scope.myData = response.data.moviesRecords;
+	});
 });
