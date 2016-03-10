@@ -1,0 +1,13 @@
+<div id="mostPopularMovies" style="padding-left:200px">            
+    <div class="movieTitle">Most Popular</div>
+
+    <div class="row">
+        <div ng-controller="MoviesController">
+            <ul class="img-thumbnails">
+                <li class="thumbnail" ng-repeat="x in myMovies | limitTo:12" style="display:inline-block; width:200px">
+                    <img src="{{x.Image}}">
+                </li>
+            </ul>   
+        </div>
+    </div>
+</div>        

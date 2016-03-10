@@ -1,0 +1,10 @@
+.product-list-header,
+.product-list-link {
+    color:black;
+    font-family: omnes_medium;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: .5em;
+    float: left;
+}

@@ -10,22 +10,23 @@ body {
 	vertical-align:baseline;
 	z-index:750;
 }
+
 .header-color {
-	background-color:#008000;
+	background-color:#007dc6;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-color: #000;  /*Sets the text hover color on navbar*/
+color: black;  /*Sets the text hover color on navbar*/
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
  a:hover, .navbar-default .navbar-nav > .active > a:focus {
-color: white; /*BACKGROUND color for active*/
-background-color: #008000;
+color: black /*BACKGROUND color for active*/
+background-color: #007dc6;
 }
 
 .navbar-default {
-    background-color: #008000;
-    border-color: #008000;
+    background-color: #007dc6;
+    border-color: #007dc6;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -33,14 +34,13 @@ background-color: #008000;
     background-color: silver; /*Change rollover cell color here*/
   }
 .navbar-default .navbar-nav > li > a {
-   color: white; /*Change active text color here*/
+   color: black /*Change active text color here*/
     }
 .header-font-style  {
-	color:#ffffff;
+	color:black;
 	font-size:20px;
 }
 .navbar-brand {
-	color:#ffffff;
 	font-family:Brush Script MT;
 	font-weight:bold;
 	font-size:35px;
@@ -57,7 +57,7 @@ background-color: #008000;
 	font-size:12px;
 }
 a {
-	color:#fff;
+	color:black;
 }
 .break-style {
 	margin-top:12px;
@@ -127,24 +127,39 @@ footer .row {
 	font-size:15px;
 }
 #left-menu {
-	border:15px groove #008000;
+	
 	width:95px;
-	margin-left:100px;
+	margin-left:20px;
 }
 #left-menu .social-icons {
 	padding:10px 10px 10px 10px;
 }
 #slides_control > div{
-  height: 400px;
+  height: 300px;
 }
 img{
   margin:auto;
-  width: 400px;
+  width: 300px;
 }
 #slides_control {
   position:absolute;
-  width: 400px;
-  left:50%;
+  width: 300px;
+  left:20%;
   top:20px;
  margin-left:-200px;
+}
+
+/* movies page css */
+.movieTitle {
+    text-decoration:underline;
+    font-size: 25px;
+    padding-bottom:30px;
+    margin-top:20px;
+}
+.movieSubTitle, .movieTitle {
+    list-style-type:none;
+}
+.movieSubTitle {
+    text-decoration:none;
+    padding-bottom: 20px;
 }

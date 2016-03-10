@@ -1,0 +1,13 @@
+<div id="allMovies">            
+    <div class="movieTitle">Movies</div>
+
+    <div class="row">
+        <div ng-controller="MoviesController">
+            <ul class="img-thumbnails">
+                <li class="thumbnail" ng-repeat="x in myMovies" style="display:inline-block; width:200px">
+                    <img src="{{x.Image}}">
+                </li>
+            </ul>  
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<style>
+.navbar-fixed-left {
+  width: 160px;
+  position: fixed;
+  border-radius: 0;
+  height:420px;
+  font-weight:bold;
+  font-size:15px;
+
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none; 
+  width: 139px;  
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 200px;
+}
+
+
+</style>
+<div class="navbar navbar-fixed-left navbar-custom">
+        <div>
+            <div  class="movieTitle" >Movies</div>
+            
+            <ul style="list-style:none; text-align:left; padding-left:0">
+                <li style="padding-bottom:10px"><a ui-sref="all">All</a></li>
+                <li class="active"><a ui-sref="#mostPopular">Most Popular</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <div  class="movieTitle" >Genres</div>
+            
+            <ul style="list-style:none; text-align:left; padding:0">
+                <li style="padding-bottom:10px"><a href="#">Action</a></li>
+			     <li style="padding-bottom:10px"><a href="#">Comedy</a></li>
+                <li style="padding-bottom:10px"><a href="#">Drama</a></li>
+                <li style="padding-bottom:10px"><a href="#">Family</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+        </div>
+    </div>
