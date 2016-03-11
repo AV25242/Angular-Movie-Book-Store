@@ -16,6 +16,7 @@ myapp.config(function ($stateProvider, $urlRouterProvider) {
         
       // for movies page and multiple named views
 		.state('movies', {
+
 			url:'/Movies', 
 			templateUrl: 'templates/movies.html',
 			controller: 'MoviesController'			
@@ -60,7 +61,6 @@ myapp.config(function ($stateProvider, $urlRouterProvider) {
               console.log("enter books.detail");
             }
         })
-    
 		// for login page 
 		.state('SignIn', {
 			url: '/SignIn',
@@ -89,6 +89,7 @@ myapp.controller('MainController', function ($scope) {
 
 // controller for movies list 
 myapp.controller('MoviesController', function($scope, $http) {
+
 	$http.get("./app/moviesCollection.json").then(function (response) {
 		$scope.myMovies = response.data.moviesRecords;
 	});
@@ -99,4 +100,4 @@ myapp.controller('MoviesController', function($scope, $http) {
   $http.get("json/books.json").then(function (response) {
       $scope.books = response.data.records;
   });
-});
+ });

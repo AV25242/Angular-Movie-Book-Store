@@ -4,6 +4,7 @@
             "SKU" 		: 1001,
 			"Title" 	: "The Night Before",
 			"Image"		:"../images/TheNightBefore.jpg",
+
 			"Starring" 	: "Joseph Gordon-Levitt, Seth Rogen, Anthony Mackie, Lizzy Caplan, Jillian Bell",
 			"Directors" : "Jonathan Levine",
 			"Genres" 	: "Comedy",
@@ -13,6 +14,7 @@
 			"Runtime"	: "1:41",
 			"Description": "Ethan, Isaac and Chris have been friends since childhood, and for a decade, their yearly Christmas Eve reunion has been an annual night of debauchery and hilarity. Now that they're entering adulthood, the tradition is coming to an end, and to make it as memorable as possible, they set out to find the Nutcracka Ball - the Holy Grail of Christmas parties."
 		},
+
 		{	
             "SKU" 		: 1002,
 			"Title" 	: "Miss You Already",
@@ -26,6 +28,7 @@
 			"Runtime"	: "1:53",
 			"Description": "Milly is the woman who has everything: a successful career, a rock-star husband, and two beautiful children. Her best friend, Jess, works in a community garden, lives in a boathouse with her boyfriend Jago, and desperately wants a baby. Jess and Milly can't remember a time they didn't share everything - secrets, clothes, even boyfriends. That is, until Milly is hit with the life-changing news that she has breast cancer and needs Jess's support more than ever. As Jess tries to balance her own life as well as being there for Milly, it is only a matter of time before the pressure on their bond takes its toll."			
 		},
+
         {	
             "SKU" 		: 1003,
 			"Title" 	: "Pinocchio",
@@ -39,6 +42,7 @@
 			"Runtime"	: "1:41",
 			"Description": "Pinocchio is a mischievous yet loveable puppet who would do anything to find his roots and become a real boy. With no strings attached, Pinocchio sets off to find a way to become real, but runs into some trouble along the way. However, nothing can stop the ever-so chipper puppet from chasing his dream."
 		},
+
         {	
             "SKU" 		: 1004,
 			"Title" 	: "Room",
@@ -65,6 +69,7 @@
 			"Runtime"	: "1:33",
 			"Description": "What if the asteroid that forever changed life on Earth missed the planet completely and giant dinosaurs never became extinct? While traveling through a harsh and mysterious landscape, an Apatosaurus named Arlo makes an unlikely human friend, learns the power of confronting his fears and discovers what he is truly capable of."
 		},
+
 		{	
             "SKU" 		: 1006,
 			"Title" 	: "Inside Out",
@@ -103,6 +108,7 @@
 			"Runtime"	: "2:02",
 			"Description": "Two different expeditions are challenged beyond their limits by one of the fiercest snowstorms ever encountered by mankind in an attempt to reach the summit of the world's highest mountain. Their mettle tested by the harshest elements found on the planet, the climbers face nearly impossible obstacles as a lifelong obsession becomes a breathtaking struggle for survival. Based on a true story."
 		},
+
 		{	
             "SKU" 		: 1009,
 			"Title" 	: "Batman: Bad Blood",
@@ -189,6 +195,7 @@
 			"Rating"	: "PG",
 			"Runtime"	: "1:31",
 			"Description": "Starting as single-celled, yellow organisms, Minions evolve through the ages, perpetually serving the most despicable of masters. Continuously unsuccessful at keeping these masters-from T. rex to Napoleon-the Minions find themselves without someone to serve and fall into a deep depression. But one Minion named Kevin has a plan, and he-alongside teenage rebel Stuart and lovable little Bob-ventures out into the world to find a new evil boss for his brethren to follow. The trio embarks upon a thrilling journey that ultimately leads them to their next potential master, Scarlet Overkill, the world's first-ever female super-villain. They travel from frigid Antarctica to 1960s New York City, ending in mod London, where they must face their biggest challenge to date: saving all of Minionkind from annihilation."
+
 		}	
 
     ]
