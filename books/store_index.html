@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Angular Book Store</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>   
+    
+
+    
+    
+<body>
+<h1 id= "tittle">BARNES&NOBLE</h1>
+<input type= "text" placeholder="Search">
+<button type="button" class="btn btn-sucess">
+      <span class="glyphicon glyphicon-search"></span> Search
+    </button> 
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand"  href="books.html">Books</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="store_index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="kids.html">Kids <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Ebooks</a></li>
+            <li><a href="#">Cd</a></li>
+          </ul>
+        </li>
+        <li><a href="kids.html">toys and Games</a></li>
+        <li><a href="#">Home& Gifts</a></li>
+		<div class="dropdown">
+             <a href="#" class="dropbtn">Teens</a>
+             <div class="dropdown-content">
+			  <a href="#">Fictions</a>
+			  <a href="#">Non Fictions</a>
+			  <a href="#">Music</a>
+              </div>
+        </div>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>  
+</nav>  
+    
+    
+    
+
+<div ng-app="myApp" ng-controller="customersCtrl"> 
+
+    <p><input type="text" ng-model="search"> </p>
+
+    <select ng-model = "Books" ng-options= "x.Tittle for x in myData "></select>
+
+    <h1>You selected: {{Person.Tittle}}</h1>
+     <h2> from {{Person.Author}}</h2>   
+
+
+    <table>
+        <thead>
+        <th>Author</th>
+        <th>Tittle</th>
+        </thead>
+
+      <tr ng-repeat="x in myData |filter:  Person.Tittle">
+        <td ng-if="$odd" style="background-color: #f1f1f1">{{ x.Tittle }}</td>
+        <td ng-if="$even" style="background-color: #ffffff">{{x.Tittle }}</td>   
+        <td ng-if="$odd" style= "background-color: #f1f1f1"> {{ x.Author }}</td>
+        <td ng-if="$even" style="background-color: #ffffff">{{x.Author}}</td>  
+         
+      </tr>
+    </table>
+    <br><br>
+    <div class="row" ng-repeat = "book in myData |orderBy:'Tittle' | filter:books">
+	    <div class="col-sm-4"> 
+        <div class="container">     
+        <img ng-src = "{{book.image}}" class="img-thumbnail" alt="Cinque Terre" height="300" width="200" > 
+        </div>
+        </div>    
+        <div class="col-sm-6"> 
+            <a href="#/products/{{boook.sku}}"> 
+            <b>{{ book.Tittle }}</b> 
+           <h3> {{ book.Author }}</h3>
+            <p> {{book.sku}}</p></a>
+           <p id= "price">{{book.price | currency}}</p>
+            <p id = "dis" >{{book.Discription}}</p>
+        </div>
+	    <div class= "col-sm-2">
+         <a href="" ng-click = "cart.addItem(book.sku, book.Tittle, book.price, 1 )"> add to cart</a>
+        </div>
+	     
+   </div>  
+    
+    
+</div>
+
+<script src= "app.js">
+
+</script>
+
+</body>
+</html>
