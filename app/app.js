@@ -1,6 +1,6 @@
 var myapp = angular.module('myapp', ['ui.router', 'ui.bootstrap']);
 
-myapp.config(function($stateProvider, $urlRouterProvider) {
+myapp.config(function ($stateProvider, $urlRouterProvider) {
 	
 	// for any unmatched url, send to /home
 	$urlRouterProvider.otherwise('/home');
@@ -11,12 +11,12 @@ myapp.config(function($stateProvider, $urlRouterProvider) {
 		.state('home',  {
             url: '/home',
 			templateUrl: 'templates/home.html',
-			controller:'MainController'
+			controller: 'MainController'
 			})
         
       // for movies page and multiple named views
 		.state('movies', {
-			url: '/Movies', 
+			url:'/Movies', 
 			templateUrl: 'templates/movies.html',
 			controller: 'MoviesController'			
 			})
@@ -24,7 +24,7 @@ myapp.config(function($stateProvider, $urlRouterProvider) {
     
     // for books page and multiple names=d views
 		.state('books', {
-			url: '/Books',
+			url:'/Books',
 			templateUrl: 'book_index.html'
 			})
     
