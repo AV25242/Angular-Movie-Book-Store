@@ -3,10 +3,12 @@
 <BODY>
 
 <h1>this is a demo H1 </h1>
-<H2>this is a demo </H2>
+<h2>this is a demo FOR h2 </h2>
 
-<H1>this is a demo </H1>
-<H1>this is a demo </H1>
+<h3>this is a demo for h3</h3>
+<h4>this is a demo </h4>
+
+<p> added a new para</p>
 
 </BODY>
 
