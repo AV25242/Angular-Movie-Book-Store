@@ -1,0 +1,29 @@
+<div class= "row">
+	    <div class="col-sm-4"> 
+            <div class="img-thumbnails">
+            <img ng-src = "{{person.image}}" class="img-thumbnail" alt="Cinque Terre" width:200px" > 
+            </div>                 
+        </div>    
+        <div class="col-sm-6"> 
+             
+            <h3><b>{{ person.Tittle }}</b> </h3> 
+           <h3> {{ person.Author }}</h3>
+           <p id= "price">{{person.price | currency}}</p>
+            <p id = "dis" >{{person.Discription}}</p>
+            
+        </div>
+	    <div class= "col-sm-2">
+        <a href="#" ng-click = "cart.addItem(book.sku, book.Tittle, book.price, 1 ) "class="btn btn-info" role="button">add to cart</a>    
+        </div>
+    </div>    
+	     
+
+<!--
+      <ul  class="img-thumbnails">
+            <li ng-repeat="person in books" class="thumbnail" style="display:inline-block; width:200px">
+                <a ng-href="#/book/{{person.sku}}">
+                    <img ng-src = "{{person.image}}"  alt="Cinque Terre" >
+                </a>
+            </li>
+        </ul>
+-->

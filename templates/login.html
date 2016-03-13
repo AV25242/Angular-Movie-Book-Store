@@ -1,0 +1,55 @@
+<div class="container-fluid text-center" style="height:60px;width:100% padding:50px">
+    <h2> Movie Store</h2>
+</div>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-4">
+    </div>
+    
+    <div class="col-sm-4 col-xs-12" style="display:inline-block;"> 
+        <div class="panel panel-default" >
+            
+            <div class="panel-body">
+                
+                <form role="form" >
+                    
+                <h2 style="float:left;">Sign In</h2>
+                <div class="form-group" name="cardForm"style="clear:left;">
+                    
+                    
+                    
+                        <label translate for="email" style="float:left; padding-top:10px" >Email:</label>
+                        <input type="email" class="form-control"  ng-model="obj.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required id="email" placeholder="Enter email">
+                    <div ng-messages="cardForm.email.$error" ng-messages-include="error-messages">
+    <div ng-message="pattern">Please enter a valid email address!</div>
+  </div>
+                </div>
+                <div class="form-group">
+                        <label for="pwd" style="float:left;" >Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+      
+                <input type="button" class="form-control" value="Sign In" style="background-color: #FFBC40;color:black;" >
+                <div style="margin:18px;">
+                    <p style="color:greay;">New to Movie Store?</p>
+                </div>
+                <input type="button" class="form-control" value="Creat an account" onClick="parent.location='Creat login.html'"style="background-color: #EBEBE6;color:black;" >
+      
+                <div style=" margin-top: 50px;text-align: left;">
+                    <p>By signing in you are agreeing to our <a>Conditions of Use and Sale</a> and our <a>Privacy Notice.</a></p>
+                </div>
+                    
+                </form>
+                
+                </div>
+         
+            </div>
+
+        </div>
+        <div class="col-sm-4 col-xs-12" style="float:left;" >
+      
+        </div>
+ 
+    </div>
+</div>

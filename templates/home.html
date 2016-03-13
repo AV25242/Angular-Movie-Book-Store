@@ -1,0 +1,87 @@
+<style>
+    #wrapper {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        width: 1000px;
+        height: 150px;
+        padding: 10px;
+        position:absoulte;
+        left:20%;
+        right:20%;
+    }
+    #carousel img {
+        width:100%;
+        height:150px;
+        margin:0 5px;
+        float:left;
+    }
+    #prev, #next {
+        background:transparent
+    }
+</style>
+
+<div class="container">
+    <div class="well">
+    <!-- carousel container-->
+	<div ng-controller="MainController" id="slidesControl">
+		<div>
+			<carousel interval="myInterval">
+				<slide ng-repeat="slide in slides" active="slide.active">
+					<img ng-src="{{slide.image}}" style="width:75%; height:500px">
+                    
+					<div class="carousel-caption">
+						<h4>Slide {{$index + 1}}</h4>
+					</div>
+				</slide>
+			</carousel>
+		</div>
+    </div>
+    
+    
+    <!-- moviesList container -->
+    <div> 
+        <div class="row"> 
+            <!-- link for movies page -->
+            <a href="index.html#/Movies" style="text-decoration:underline">
+                <h1 id="moviesList" class="product-list-header" style="display:block">
+                Movies <span class="glyphicon glyphicon-menu-right"></span>
+                </h1>
+            </a>
+        </div>
+        <!-- movies images slider -->
+        <div class="row">
+            <div ng-controller="MoviesController">
+                 <ul class="img-thumbnails">
+                    <li class="thumbnail" ng-repeat="x in myMovies | limitTo:5" style="display:inline-block; width:200px">
+                        <img src="{{x.Image}}">
+                    </li>
+                </ul>   
+            </div>
+        </div>
+    </div>
+    
+     <!-- booksList container -->
+    <div> 
+        <div class="row"> 
+            <!-- link for movies page -->
+            <a href= "#/book/list" style="text-decoration:underline">
+                <h1 id="booksList" class="product-list-header" style="display:block">
+                Books <span class="glyphicon glyphicon-menu-right"></span>
+                </h1>
+            </a>
+        </div>
+        <!-- movies images slider -->
+        <div class="row">
+            <div ng-controller="booksCtrl">
+                 <ul class="img-thumbnails">
+                    <li class="thumbnail" ng-repeat="x in books | limitTo:5" style="display:inline-block; width:200px">
+                        <img src="{{x.image}}">
+                    </li>
+                </ul>   
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</div>
+    

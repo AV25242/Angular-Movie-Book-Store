@@ -1,0 +1,104 @@
+<style>
+.navbar-fixed-left {
+  width: 160px;
+  position: fixed;
+  border-radius: 0;
+  height:420px;
+  font-weight:bold;
+  font-size:15px;
+
+}
+
+.navbar-fixed-left .navbar-nav > li {
+    float: none; 
+    width: 139px;
+}
+
+.navbar-fixed-left + .container {
+    padding-left: 200px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+    margin-top: -50px;
+    margin-left: 140px;
+}
+
+</style>
+<div class="container-fluid">
+    <div id= "tabs" ng-app="TabController">
+	   <div class="navbar navbar-fixed-left navbar-custom">
+		  <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="movieTitle">
+                    Movies
+                </li>
+                <li class="movieSubTitle" ng-class="{active:isActiveTab(tab.url)}" ng-click="onClickTab(tab)">
+                    Most Popular
+                </li>
+                <li class="movieSubTitle" ng-class="{active:isActiveTab(tab.url)}" ng-click="onClickTab(tab)">
+                    All
+                </li>
+                <li class="movieTitle">
+                    Genres
+                </li>
+                <li class="movieSubTitle">
+                    Action
+                </li>
+                <li class="movieSubTitle">
+                    Comedy
+                </li>
+                <li class="movieSubTitle">
+                    Drama
+                </li>
+                <li class="movieSubTitle">
+                    Family
+                </li>
+                <li class="movieSubTitle">
+                    Kids
+                </li>
+            </ul>
+        </div>
+    </div>
+	<div class="container">
+		<div class="row">
+		  <div id="mostPopularMovies" style="padding-left:200px">            
+                <div class="movieTitle">Most Popular</div>
+            </div>
+            <div class="row">
+                <div ng-controller="MoviesController">
+                    <ul class="img-thumbnails">
+                        <li class="thumbnail" ng-repeat="x in myMovies | limitTo:12" style="display:inline-block; width:200px">
+                            <img src="{{x.Image}}">
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </div>        
+	</div> 
+    </div>
+</div>
+
+
+myapp.controller('TabController', ['$scope', function($scope) {
+    $scope.tabs = [
+        {
+          title: 'All',
+          url: 'movies.all.html'
+        },
+        {
+            title: 'Most Popular',
+            url: 'movies.mostpopular.html'
+        }
+    ];
+    
+    $scope.currentTab = 'movies.mostpopular.html';
+                 
+    $scope.onClickTab = function (tab) {
+        $scope.currentTab = tab.url;
+    }
+
+    $scope.isActiveTab = function(tabUrl) {
+        return tabUrl = $scope.currentTab;
+    }
+}]);

@@ -1,0 +1,16 @@
+<h3> click on the image to show its detail<h3>
+<div id="allMovies">
+   
+      <div ng-controller = "booksCtrl">
+    
+        <ul  class="img-thumbnails">
+            <li ng-repeat="person in books" class="thumbnail" style="display:inline-block; width:200px">
+                <a ng-href="#/book/{{person.sku}}">
+                    <img ng-src = "{{person.image}}"  alt="Cinque Terre" >
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+

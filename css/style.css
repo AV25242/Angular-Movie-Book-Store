@@ -1,0 +1,165 @@
+body {
+	background-color:#fff;
+	font-family:omnes_medium, Arial, "Trebuchet MS", sans-serif;
+	font-size:87.5%;
+	line-height:24px;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	display:block;
+	vertical-align:baseline;
+	z-index:750;
+}
+
+.header-color {
+	background-color:#007dc6;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: black;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: black /*BACKGROUND color for active*/
+background-color: #007dc6;
+}
+
+.navbar-default {
+    background-color: #007dc6;
+    border-color: #007dc6;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: silver; /*Change rollover cell color here*/
+  }
+.navbar-default .navbar-nav > li > a {
+   color: black /*Change active text color here*/
+    }
+.header-font-style  {
+	color:black;
+	font-size:20px;
+}
+.navbar-brand {
+	font-family:Brush Script MT;
+	font-weight:bold;
+	font-size:35px;
+}
+.navbar-brand small {
+  display:block;
+  font-size:16px;
+  font-family:omnes_medium, Arial, "Trebuchet MS", sans-serif;
+}
+.header-font-bold {
+	font-weight:bold;
+}
+.header-font-small {
+	font-size:12px;
+}
+a {
+	color:black;
+}
+.break-style {
+	margin-top:12px;
+}
+.icon-addon .form-control {
+    border-radius:20px;
+}
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+.icon-addon:after {
+    clear: both;
+}
+.icon-addon .glyphicon,
+.icon-addon.addon-sm .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+	margin-top:12px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px;
+}
+.icon-addon.addon-sm .form-control {
+    height: 30px;
+    padding: 5px 10px 5px 40px;
+    font-size: 12px;
+    line-height: 1.5;
+	margin-top:12px;
+}
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+    margin-left: 0;
+    font-size: 12px;
+    left: 5px;
+    top: -1px
+}
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon {
+    color: #2580db;
+}
+.glyphicon-shopping-cart {
+	margin-top:16px;
+	padding-right:20px;
+	font-size:20px;
+	color:#ffffff;
+}
+.icon-flipped {
+transform: scaleX(-1);
+-moz-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+-ms-transform: scaleX(-1);
+}
+footer .row {
+	text-align:left;
+	font-size:15px;
+}
+#left-menu {
+	
+	width:95px;
+	margin-left:20px;
+}
+#left-menu .social-icons {
+	padding:10px 10px 10px 10px;
+}
+#slides_control > div{
+  height: 300px;
+}
+img{
+  margin:auto;
+  width: 300px;
+}
+#slides_control {
+  position:absolute;
+  width: 300px;
+  left:20%;
+  top:20px;
+ margin-left:-200px;
+}
+
+/* movies page css */
+.movieTitle {
+    text-decoration:underline;
+    font-size: 25px;
+    padding-bottom:30px;
+    margin-top:20px;
+}
+.movieSubTitle, .movieTitle {
+    list-style-type:none;
+}
+.movieSubTitle {
+    text-decoration:none;
+    padding-bottom: 20px;
+}
