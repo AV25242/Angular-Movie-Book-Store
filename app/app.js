@@ -1,5 +1,6 @@
 var myapp = angular.module('myapp', ['ui.router', 'ui.bootstrap']);
 
+//test comment
 myapp.config(function($stateProvider, $urlRouterProvider) {
 	
 	// for any unmatched url, send to /home
